@@ -1,0 +1,7 @@
+header.row-header(layout="row")
+  h2 {{ feed.label }}
+  | &nbsp;
+  h3 {{ feed.account.user }}
+
+.items(layout="col")
+  social-item(*ng-for="#post of feed.stream", [post]="post")

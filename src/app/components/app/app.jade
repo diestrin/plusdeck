@@ -1,0 +1,8 @@
+header
+  .left-nav
+    ul(layout="col")
+      li.l-left
+        a.top-nav-button.ac-default-themea(href, (click)="addAccount($event)") A
+
+main(layout="row", grow="1")
+  feed-column(*ng-for="#feed of feeds", [feed]="feed")

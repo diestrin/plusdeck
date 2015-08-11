@@ -1,0 +1,50 @@
+@import "base";
+@import "variables";
+
+:host {
+  @extend %host;
+  @extend %layout;
+  @extend %layout-col;
+
+  background-color: $gray-1;
+  border-bottom: 1px solid $gray-2;
+}
+
+.content {
+  padding: 8px 10px 8px 65px;
+
+  a {
+    color: $white;
+  }
+}
+
+header {
+  font-weight: 200;
+}
+
+.profile-picture {
+  margin-left: -55px;
+  margin-top: 3px;
+  width: 48px;
+  float: left;
+}
+
+.name {
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.alias, time {
+  font-size: 12px;
+  font-weight: 100;
+  color: $gray-4;
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+time {
+  float: right;
+}

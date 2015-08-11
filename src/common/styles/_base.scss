@@ -1,0 +1,32 @@
+@import "variables";
+
+%host {
+  font-family: $font-family;
+  box-sizing: content-box;
+}
+
+%layout {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%layout-row {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+%layout-col {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+[layout] {@extend %layout;}
+[layout=row] {@extend %layout-row;}
+[layout=col] {@extend %layout-col;}
+[grow="0"] {-webkit-flex-grow: 0; -ms-flex-grow: 0; flex-grow: 0;}
+[grow="1"] {-webkit-flex-grow: 1; -ms-flex-grow: 1; flex-grow: 1;}
+[grow="2"] {-webkit-flex-grow: 2; -ms-flex-grow: 2; flex-grow: 2;}

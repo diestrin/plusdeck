@@ -1,0 +1,51 @@
+@import "variables";
+@import "base";
+
+:host {
+  @extend %host;
+  @extend %layout;
+  @extend %layout-row;
+  height: 100vh;
+}
+
+header {
+  background-color: $black;
+}
+
+.left-nav {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  color: $white;
+  width: 50px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+    }
+  }
+}
+
+.top-nav-button{
+  display:block;
+  color: $white;
+  text-decoration:none;
+  font-weight:400;
+  font-size:16px;
+  text-align: center;
+  padding: 15px 5px;
+
+  &:active, &:hover {
+    outline: 0px none;
+  }
+}
+
+.l-left {
+  float: left;
+}
+
+main {
+  background-color: $gray-3;
+}

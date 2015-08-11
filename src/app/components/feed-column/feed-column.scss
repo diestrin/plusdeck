@@ -1,0 +1,34 @@
+@import "base";
+@import "variables";
+
+:host {
+  @extend %host;
+  @extend %layout;
+  @extend %layout-col;
+
+  max-width: 350px;
+  min-width: 350px;
+  height: 100vh;
+  overflow: hidden;
+  padding: 5px;
+  padding-right: 0;
+  border: 1px solid $gray-2;
+  color: $white;
+}
+
+.row-header {
+  background-color: $gray-2;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+
+  h2, h3 {
+    margin: 0;
+    display: inline-block;
+    font-weight: 200;
+  }
+}
+
+.items {
+  overflow-y: scroll;
+}

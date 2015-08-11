@@ -1,0 +1,12 @@
+article.content
+  header
+    a.user
+      img.profile-picture([src]="post.profilePicture")
+      span.name {{ post.displayName }}
+
+    time
+      a {{ post.createdAt | moment:'fromNow':true }}
+
+  .body
+    img([src]="post.image", width="275px")
+    p([inner-html]="post.content")
